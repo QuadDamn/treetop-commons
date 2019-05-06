@@ -1,6 +1,6 @@
 ## Treetop Commons Engineering Problem Submission
 
-#### Usage
+### Usage
 
 Ensure that you have Node installed with the latest LTS version (10.13.0).
 
@@ -18,13 +18,13 @@ Query params are available to be added to the endpoint and all of them have been
 npm test
 ```
 
-#### Added Improvements
+### Added Improvements
 
 - API versioning structure setup
 - Wrote basic API/Integration Tests using Supertest, Mocha, Chai
 - Added status message to API response (just a habit).  Any API error should return the proper status code, a human readable error message, and the actual error message from Node.
 
-#### Improvements With Additional Time
+### Improvements With Additional Time
 
 - Write unit tests for the helper functions.  Just added some blanket API/Integration tests as a stopgap for now due to time constraints.
 - Make the application at least more CRUD-oriented.  The problem only required the one endpoint, but you should really have the ability to fetch a single organization by ID, or create, update, and delete these data points as well at the very least.
