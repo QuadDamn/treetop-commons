@@ -2,6 +2,14 @@ const {isEmpty, filter, sortJsonArray} =  require('./helpers');
 const csv = require('csvtojson');
 const csvFilePath = __dirname + '/../data/organization_sample_data.csv';
 
+/**
+ * Get a list of all of the organizations.  The list could be filtered / sorted
+ * depending on the query parameters passed to the endpoint.
+ *
+ * @param req
+ * @param res
+ * @returns {Promise<*|void>}
+ */
 async function getOrganizations(req, res) {
   const queryParams = req.query;
   const organizationsArray = await csv().fromFile(csvFilePath);
