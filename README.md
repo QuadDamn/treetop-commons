@@ -34,3 +34,4 @@ npm test
 - Write up a CI file for your deploy scripts for Gitlab / Github for Jenkins, ConcourseCI, or other CI/CD platforms.
 - Swagger documentation for all endpoints.
 - Apigee proxy for all endpoints.
+- API Authentication (if needed) and/or request volume throttling.
