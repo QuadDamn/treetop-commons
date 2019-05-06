@@ -1,6 +1,6 @@
 const router = require("express").Router();
-const view = require("../../../src/organizations");
+const organizations = require("../../../src/organizations");
 
-router.get("/", view.getViews);
+router.get("/", organizations.getOrganizations);
 
 module.exports = router;
